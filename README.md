@@ -23,7 +23,7 @@ We have the feedback in first 'Review' column. Now we have to clean this text. C
 2. The second step is to remove stopwords. Stopwords are like a, the, is , was, yet, so... These kind of words are not useful while predicting customer feelings. So we remove them.
 <br>
 3. We have to divide the sentences into words. So we will have final words like good, bad, not, really, taste.. These words will help us understanding the client thoughts.
-<br>
+<br><br>
 So we do all these steps and put the final words in a python array. Here we use the famous 'nltk' library which is widely used on this process. It already has the all stopwords in 'stopwords' module, for several languages.
 <br>
 So let's see the code
@@ -115,6 +115,6 @@ Consider a customer said, "The food quality is very very bad had order some soup
 
 <h3>Conclusion</h3>
 Congratulations, you made it this far. We have read, cleaned and processed the data. We trained data with naive bayes model and got the results. From the above we see the model is giving good accuracy score 85.9%. This can be increased using Bagging or Boosting techniques, by means training multiple times by shiffling, different sets of data.
-
+<br><br>
 Thank you...
      
