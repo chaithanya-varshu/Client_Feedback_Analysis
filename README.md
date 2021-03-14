@@ -125,14 +125,14 @@ To solve these problems we use the concept called TF-IDF (Term Frequency - Inver
 In this process, here we use the formula to multiply the frequency of the word in particular category is multiplied by a logarithmic function which we divide the total number of words by the frquency of word in number of categories. Below formula will help in supressing the effect of commonly occuring words in all categories. This is very useful in the text analytics.
 <br><br>
 
-     <b>w(i,j) = f(i,j)*log(N/f(i))</b>
+     w(i,j) = f(i,j)*log(N/f(i))
      
      Here w(i,j) = for a word i in j category
      Here f(i,j) = frequency of word i in j category
      N      = Number of categories
      f(i)   = Frequency of word i occuring in number of categories
  
-<br><br>
+<br>
 In python, we can use 'feature_extraction' library in sklearn to achieve this. Please refer below code. A unique bag of words from entire dataset is referred as a corpus in general terms.
 <br><br>
 
@@ -140,7 +140,7 @@ In python, we can use 'feature_extraction' library in sklearn to achieve this. P
      vectorizer = TfidfVectorizer()
      vectorizer.fit(corpus)
 
-<br><br>
+<br>
 <h3>Conclusion</h3>
 Congratulations, you made it this far. We have read, cleaned and processed the data. We trained data with naive bayes model and got the results. From the above we see the model is giving good accuracy score 85.9%. This can be increased using Bagging or Boosting techniques, by means training multiple times by shiffling, different sets of data.
 <br><br>
