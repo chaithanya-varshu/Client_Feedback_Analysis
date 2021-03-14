@@ -127,10 +127,10 @@ In this process, we use a formula to multiply the frequency of a word in particu
 
      w(i,j) = f(i,j)*log(N/f(i))
      
-     Here w(i,j) = for a Word i in j category
-          f(i,j) = frequency of word i in j category
-          N      = Number of categories
-          f(i)   = Frequency of word i occuring in number of categories
+     Here, w(i,j) = for a Word i in j category
+           f(i,j) = frequency of word i in j category
+           N      = Number of categories
+           f(i)   = Frequency of word i occuring in number of categories
  
 <br>
 In python, we can use 'feature_extraction' library in sklearn to achieve this. Please refer below code. A unique bag of words from entire dataset is referred as a corpus in general terms.
